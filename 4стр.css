@@ -1,0 +1,235 @@
+  *{
+    margin: 0;
+    padding: 0;
+
+}
+.sidenav {
+    height: 100vh;
+    width: 160px; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: #DE1313; 
+    overflow-x: hidden; 
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 50px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+   font-family: 'Montserrat';
+}
+
+.sidenav a:hover {
+    background: gray;
+}
+
+
+.main {
+    margin-left: 160px; 
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+.line1{
+    width: 100vh;
+    height: 1px;
+    text-align: center;
+    background-color: black;
+    position: absolute;
+    top: 30px;
+    margin-left: 160px;
+}
+.news{
+    font-size: 16px;
+    color: black;
+    display: flex;
+   font-family: 'Montserrat';
+   font-style: normal;
+    font-weight: 500;
+   margin-top: 50px;
+   margin-left: 180px;
+}
+.grid * {
+    box-sizing: border-box;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 40px;
+    padding: 20px 0 ;
+    margin-left: 300px;
+    margin-top: 100px;
+}
+/* Кол-во блоков на разных экранах */
+@media only screen and (max-width: 1200px) {
+    .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+.grid-item {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2), 0 4px 6px rgba(0,0,0,0.2);
+    transition: box-shadow .3s;
+    width: 100%;
+    height: 100%;  
+}
+.grid-item .image {
+    height: 200px;
+    overflow: hidden;
+}
+.grid-item .info {
+    position: relative;
+    height: calc(100% - 200px);
+    padding: 30px 14px 80px 14px;
+}
+.grid-item:hover {
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 16px 20px rgba(0,0,0,0.2);
+}
+.grid-item .image img  {
+      transition: transform 280ms ease-in-out;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    
+}
+.grid-item:hover .image img  {
+    transform: scale(1.1);
+}
+.info h2 {
+    font-family: 'Montserrat';
+    color: #337AB7;
+    font-size: 20px;
+    font-weight: normal;
+    margin: 0;
+    text-align: center;
+}
+.info-text a {
+    position: absolute;
+    font-size: 15px;
+    line-height: 20px;
+    font-family:'Montserrat' ; 
+    margin-top: 40px;
+    text-decoration: none;
+    color: black;
+    }
+.info-text a:last-child {
+    margin-bottom: 0;
+}
+.grid-item .button-wrap {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 14px;
+    left: 0;
+    text-align: center;
+}
+#rectangle{
+    width: 250px;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0px;
+    background: #F2F2F2;
+}
+ .n1{
+    line-height: 25px;
+    position: absolute;
+    right: 20px;
+    margin-top: 60px;
+    width: 200px;
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+   font-family: 'Montserrat'; 
+   }
+   .n1:hover{
+    cursor: pointer;
+    color: blue;
+   }
+.n2{
+    line-height: 25px;
+    position: absolute;
+    right: 20px;
+    width: 200px;
+    margin-top: 150px;
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+   font-family: 'Montserrat';    
+}
+ .n2:hover{
+    cursor: pointer;
+    color: blue;
+   }
+.n3{
+    line-height: 25px;
+position: absolute;
+    right: 20px;
+    margin-top: 270px;
+    width: 200px;
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+   font-family: 'Montserrat';    
+}
+ .n3:hover{
+    cursor: pointer;
+    color: blue;
+   }
+.n4{
+position: absolute;
+    right: 20px;
+    margin-top: 600px;
+    width: 200px;
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+   font-family: 'Montserrat';   
+}
+ .n4:hover{
+    cursor: pointer;
+    color: blue;
+   }
+.line2{
+    width: 25vh;
+    height: 1px;
+    text-align: center;
+    background-color: black;
+    position: absolute;
+    right: 40px;
+    margin-top: 120px;
+}
+.line3{
+    width: 25vh;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    right: 40px;
+    margin-top: 240px;
+}
+.line4{
+    width: 25vh;
+    height: 1px;
+    background-color: black;
+    position: absolute;
+    right: 40px;
+    margin-top: 360px;
+}

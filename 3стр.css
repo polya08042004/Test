@@ -1,0 +1,150 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+.sidenav {
+    height: 100vh;
+    width: 160px; 
+    position: fixed; 
+    z-index: 1; 
+    top: 0; 
+    left: 0;
+    background-color: #DE1313; 
+    overflow-x: hidden; 
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 50px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+   font-family: 'Montserrat';
+}
+
+.sidenav a:hover {
+    background: gray;
+}
+
+
+.main {
+    margin-left: 160px; 
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+.line1{
+    width: 100vh;
+    height: 1px;
+    text-align: center;
+    background-color: black;
+    position: absolute;
+    top: 30px;
+    margin-left: 160px;
+}
+.safe{
+    font-size: 16px;
+    color: black;
+    display: flex;
+   font-family: 'Montserrat';
+   font-style: normal;
+    font-weight: 500;
+   margin-top: 50px;
+   margin-left: 180px;
+   }
+   .board {
+  padding: 15px;
+  border-radius: 10px;
+  margin: 20px;
+  background-color: #e9e9e9;
+position: absolute;
+  top: 80px;
+  left: 200px;
+  width: 150vh;
+  height: 80vh;
+}
+  .board li{
+    font-family:'Montserrat'; 
+    font-size: 18px;
+    color: black;
+    padding: 10px;
+    margin-left: 13px;
+    margin-top: 15px;
+    font-weight: normal ;
+    
+  }
+  h1{
+    font-family:'Montserrat';
+    font-weight: bold;
+    font-size: 20px;
+    color: black;
+    position: absolute;
+    top: 100px;
+    left: 230px;
+
+  }
+  /* Popup container */
+.popup {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 39%;
+    right: 60px;
+    font-family:'Montserrat';
+    font-size: 16px;
+    color: red;
+    font-weight: 600;
+}
+
+/* The actual popup (appears on top) */
+.popup .popuptext {
+    visibility: hidden;
+    width: 180px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -80px;
+    font-weight: 400;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class when clicking on the popup container (hide and show the popup) */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
